@@ -1,0 +1,8 @@
+---
+- name: testrole
+  ansible.builtin.copy:
+    src: /test.conf
+    dest: /etc/foo.conf
+    owner: foo
+    group: foo
+    mode: '0644'
